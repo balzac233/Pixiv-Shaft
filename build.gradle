@@ -3,6 +3,13 @@
 buildscript {
     ext.kotlin_version = '1.8.0'
     repositories {
+        // 改为阿里云的镜像地址
+        maven { url "https://maven.aliyun.com/nexus/content/groups/public" }
+        maven { setUrl("https://maven.aliyun.com/repository/central") }
+        maven { setUrl("https://maven.aliyun.com/repository/jcenter") }
+        maven { setUrl("https://maven.aliyun.com/repository/google") }
+        maven { setUrl("https://maven.aliyun.com/repository/gradle-plugin") }
+
         maven { url "https://jitpack.io" }
         maven { url "https://repository.jboss.org/maven2" }
         maven { url "https://plugins.gradle.org/m2/" }
@@ -31,6 +38,13 @@ plugins {
 
 allprojects {
     repositories {
+        // 改为阿里云的镜像地址
+        maven { url "https://maven.aliyun.com/nexus/content/groups/public" }
+        maven { setUrl("https://maven.aliyun.com/repository/central") }
+        maven { setUrl("https://maven.aliyun.com/repository/jcenter") }
+        maven { setUrl("https://maven.aliyun.com/repository/google") }
+        maven { setUrl("https://maven.aliyun.com/repository/gradle-plugin") }
+
         maven { url "https://jitpack.io" }
         maven { url "https://repository.jboss.org/maven2" }
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
