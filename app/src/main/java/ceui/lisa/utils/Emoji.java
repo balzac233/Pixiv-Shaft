@@ -123,9 +123,9 @@ public class Emoji {
         return origin.replace(emoji, "");
     }
 
-    private static final Map<String, String> map = new HashMap<>();
-    private static final String HEAD = "<img class=\"_2sgsdWB\" width=\"24\" height=\"24\" src=\"";
-    private static final String OFF = "\">";
+    public static final Map<String, String> map = new HashMap<>();
+    public static final String HEAD = "<img class=\"_2sgsdWB\" width=\"24\" height=\"24\" src=\"";
+    public static final String OFF = "\">";
 
     //        map.put(EMOJI_1 , HEAD + "https://s.pximg.net/common/images/emoji/101.png" + OFF);
     static {
@@ -189,7 +189,7 @@ public class Emoji {
         return result;
     }
 
-    static class CharDicWithArr {
+    public static class CharDicWithArr {
 
         static List<String> dicList = new ArrayList<>(Arrays.asList(
                 "normal", "surprise", "serious", "heaven", "happy", "excited", "sing", "cry", "normal2", "shame2",
